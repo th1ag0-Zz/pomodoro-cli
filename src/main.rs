@@ -88,7 +88,7 @@ struct Config {
 }
 
 fn usage() -> &'static str {
-    "Usage: pomodoro [--mode focus|break] [--view clock|hourglass] [--minutes 1..1440]\n\
+    "Usage: focus-timer [--mode focus|break] [--view clock|hourglass] [--minutes 1..1440]\n\
      \n\
      Defaults: focus, clock, 25 minutes (focus) or 5 minutes (break).\n\
      Controls: space pause/resume, r restart, q or Ctrl+C quit."
@@ -439,7 +439,7 @@ fn render(config: Config, timer: &Timer, width: u16, height: u16) -> Canvas {
         canvas.centered(status_y, &[(&status, GREEN)]);
     } else {
         let command = format!(
-            "pomodoro --mode {} --view {} --minutes {}",
+            "focus-timer --mode {} --view {} --minutes {}",
             config.mode.flag(),
             config.view.flag(),
             config.minutes
@@ -581,13 +581,13 @@ fn main() {
     match parse_args(std::env::args().skip(1)) {
         Ok(Some(config)) => {
             if let Err(error) = run(config) {
-                eprintln!("pomodoro: {error}");
+                eprintln!("focus-timer: {error}");
                 std::process::exit(1);
             }
         }
         Ok(None) => println!("{}", usage()),
         Err(error) => {
-            eprintln!("pomodoro: {error}\n\n{}", usage());
+            eprintln!("focus-timer: {error}\n\n{}", usage());
             std::process::exit(2);
         }
     }

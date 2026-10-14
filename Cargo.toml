@@ -1,8 +1,12 @@
 [package]
-name = "pomodoro"
+name = "focus-timer-cli"
 version = "0.1.0"
 edition = "2024"
 description = "A pomodoro timer with animated terminal clock and hourglass views"
+
+[[bin]]
+name = "focus-timer"
+path = "src/main.rs"
 
 [dependencies]
 crossterm = "0.29"
