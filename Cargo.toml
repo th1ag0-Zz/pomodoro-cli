@@ -1,0 +1,8 @@
+[package]
+name = "pomodoro"
+version = "0.1.0"
+edition = "2024"
+description = "A pomodoro timer with animated terminal clock and hourglass views"
+
+[dependencies]
+crossterm = "0.29"
