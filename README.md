@@ -23,3 +23,7 @@ Os padrões são `--mode focus`, `--view clock` e 25 minutos para foco ou 5 minu
 Durante a sessão, pressione `espaço` para pausar ou continuar, `r` para reiniciar e `q` ou `Ctrl+C` para sair. Após o término, `r` inicia outra sessão. Para ver todas as opções, execute `focus-timer --help`.
 
 O desenho se adapta ao tamanho da janela. Em terminais muito pequenos, o tempo e os controles continuam visíveis em uma versão resumida.
+
+## Licença
+
+MIT. Consulte o arquivo [LICENSE](LICENSE).
