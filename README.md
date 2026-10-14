@@ -4,11 +4,13 @@ Temporizador Pomodoro para o terminal, escrito em Rust. Escolha entre um relógi
 
 ## Instalação
 
+Com Rust e Cargo instalados, instale o pacote publicado no [crates.io](https://crates.io/crates/focus-timer-cli):
+
 ```sh
-cargo install --path .
+cargo install focus-timer-cli
 ```
 
-Após a publicação no crates.io, instale com `cargo install focus-timer-cli`. O comando instalado se chama `focus-timer`.
+O comando instalado se chama `focus-timer`. Para instalar a partir deste repositório, execute `cargo install --path .` na pasta do projeto.
 
 ## Uso
 
