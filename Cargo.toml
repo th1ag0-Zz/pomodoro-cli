@@ -1,8 +1,8 @@
 [package]
 name = "focus-timer-cli"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2024"
-description = "A pomodoro timer with animated terminal clock and hourglass views"
+description = "A pomodoro timer with an animated terminal hourglass"
 license = "MIT"
 repository = "https://github.com/th1ag0-Zz/pomodoro-cli"
 
